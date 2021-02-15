@@ -29,6 +29,7 @@ const LogoSobre = sequelize.define('logos_sobre', {
     },
     blank: {
         type: Sequelize.TINYINT(1),
+        defaultValue: 1
     },
 }, {
     tableName: "logos_sobre",

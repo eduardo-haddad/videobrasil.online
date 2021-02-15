@@ -31,3 +31,5 @@ client/.env
 
 .projectile
 jsconfig.json
+db/*.sql
+db/*.bak

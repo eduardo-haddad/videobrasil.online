@@ -7,6 +7,8 @@ const PartnerRoles = require('../models/partner-roles');
 const SaibaMais = require('../models/saiba-mais');
 const SeasonType = require('../models/season-type');
 const Sobre = require('../models/sobre');
+const Video = require('../models/video');
+const VideoProgram = require('../models/video-programs');
 
 // Associations
 
@@ -20,10 +22,30 @@ fk = {foreignKey: 'edition_id'}
 Edition.hasOne(SaibaMais, fk);
 SaibaMais.belongsTo(Edition, fk);
 
+// VideoProgram -> Edition (1:N)
+fk = {
+    foreignKey: {
+        name: 'edition_id',
+        allowNull: true
+    }
+}
+Edition.hasMany(VideoProgram, fk);
+VideoProgram.belongsTo(Edition, fk);
+
+// Video -> Edition (1:N)
+fk = {foreignKey: 'edition_id'}
+Edition.hasMany(Video, fk);
+Video.belongsTo(Edition, fk);
+
 // LogoSaibaMais -> SaibaMais (1:N)
 fk = {foreignKey: 'saibamais_id'}
 SaibaMais.hasMany(LogoSaibaMais, fk);
 LogoSaibaMais.belongsTo(SaibaMais, fk);
+
+// Video -> VideoProgram (1:N)
+fk = {foreignKey: 'video_program_id'}
+VideoProgram.hasMany(Video, fk);
+Video.belongsTo(VideoProgram, fk);
 
 // LinkSaibaMais -> SaibaMais (1:N)
 SaibaMais.hasMany(LinkSaibaMais, fk);
@@ -44,5 +66,7 @@ module.exports = {
     PartnerRoles,
     SaibaMais,
     SeasonType,
-    Sobre
+    Sobre,
+    Video,
+    VideoProgram
 }

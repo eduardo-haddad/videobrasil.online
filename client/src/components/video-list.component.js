@@ -417,7 +417,7 @@ export default function VideoList(props) {
 
                 videos.push(
                     programs.map((program, index) => {
-                        if (program.id !== 0 && artworks[program.id]) {
+                        if (!program.main_video && artworks[program.id]) {
                             return (
                                 <ThumbPreview
                                     bg={program[lang].poster}

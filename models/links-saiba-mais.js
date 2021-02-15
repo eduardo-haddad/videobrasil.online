@@ -12,8 +12,14 @@ const LinkSaibaMais = sequelize.define('links_saibamais', {
     title_en: Sequelize.STRING(1024),
     url_pt: Sequelize.STRING(1024),
     url_en: Sequelize.STRING(1024),
-    blank: Sequelize.TINYINT(1),
-    download: Sequelize.TINYINT(1),
+    blank: {
+        type: Sequelize.TINYINT(1),
+        defaultValue: 1
+    },
+    download: {
+        type: Sequelize.TINYINT(1),
+        defaultValue: 0
+    },
     text_replacement: Sequelize.TEXT
 }, {
     tableName: "links_saibamais",

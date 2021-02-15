@@ -10,7 +10,10 @@ const SaibaMais = sequelize.define('saibamais', {
     },
     content_pt: Sequelize.TEXT,
     content_en: Sequelize.TEXT,
-    replace_text: Sequelize.TINYINT(1)
+    replace_text: {
+        type: Sequelize.TINYINT(1),
+        defaultValue: 0
+    },
 }, {
     freezeTableName: true,
     tableName: "saibamais",
