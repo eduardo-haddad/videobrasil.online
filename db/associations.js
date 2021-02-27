@@ -48,6 +48,7 @@ VideoProgram.hasMany(Video, fk);
 Video.belongsTo(VideoProgram, fk);
 
 // LinkSaibaMais -> SaibaMais (1:N)
+fk = {foreignKey: 'saibamais_id'}
 SaibaMais.hasMany(LinkSaibaMais, fk);
 LinkSaibaMais.belongsTo(SaibaMais, fk);
 
