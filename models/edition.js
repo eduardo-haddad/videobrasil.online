@@ -33,7 +33,7 @@ const Edition = sequelize.define('edition', {
     bg_img_mobile: Sequelize.STRING(1024),
 }, {
     freezeTableName: true,
-    tableName: "edition",
+    tableName: "vbo_edition",
     timestamps: true
 });
 

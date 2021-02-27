@@ -16,7 +16,7 @@ const SaibaMais = sequelize.define('saibamais', {
     },
 }, {
     freezeTableName: true,
-    tableName: "saibamais",
+    tableName: "vbo_saibamais",
     timestamps: false
 });
 

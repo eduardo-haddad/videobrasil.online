@@ -21,7 +21,7 @@ const VideoProgram = sequelize.define('video_program', {
         defaultValue: 0
     }
 }, {
-    tableName: "video_program",
+    tableName: "vbo_video_program",
     timestamps: true
 });
 

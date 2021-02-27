@@ -32,7 +32,7 @@ const LogoSobre = sequelize.define('logos_sobre', {
         defaultValue: 1
     },
 }, {
-    tableName: "logos_sobre",
+    tableName: "vbo_logos_sobre",
     timestamps: true
 });
 

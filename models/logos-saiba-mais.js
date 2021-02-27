@@ -15,7 +15,7 @@ const LogoSaibaMais = sequelize.define('logos_saibamais', {
         type: Sequelize.STRING(1024),
     },
 }, {
-    tableName: "logos_saibamais",
+    tableName: "vbo_logos_saibamais",
     timestamps: true
 });
 

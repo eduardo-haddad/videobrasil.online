@@ -22,7 +22,7 @@ const LinkSaibaMais = sequelize.define('links_saibamais', {
     },
     text_replacement: Sequelize.TEXT
 }, {
-    tableName: "links_saibamais",
+    tableName: "vbo_links_saibamais",
     timestamps: true
 });
 

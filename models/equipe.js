@@ -18,7 +18,7 @@ const Equipe = sequelize.define('equipe', {
         type: Sequelize.STRING,
     },
 }, {
-    tableName: "equipe",
+    tableName: "vbo_equipe",
     timestamps: true
 });
 

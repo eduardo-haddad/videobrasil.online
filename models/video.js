@@ -36,7 +36,7 @@ const Video = sequelize.define('video', {
     caption_en: Sequelize.TEXT,
 }, {
     freezeTableName: true,
-    tableName: "video",
+    tableName: "vbo_video",
     timestamps: true
 });
 

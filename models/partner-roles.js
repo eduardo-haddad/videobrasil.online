@@ -15,7 +15,7 @@ const PartnerRoles = sequelize.define('partner_roles', {
         type: Sequelize.STRING,
     },
 }, {
-    tableName: "partner_roles",
+    tableName: "vbo_partner_roles",
     timestamps: false
 });
 

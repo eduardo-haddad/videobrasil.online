@@ -22,7 +22,7 @@ const Sobre = sequelize.define('sobre', {
         type: Sequelize.TEXT,
     },
 }, {
-    tableName: "sobre",
+    tableName: "vbo_sobre",
     timestamps: false
 });
 
