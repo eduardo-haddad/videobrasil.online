@@ -23,7 +23,7 @@ const Sobre = sequelize.define('sobre', {
     },
 }, {
     tableName: "vbo_sobre",
-    timestamps: false
+    timestamps: true
 });
 
 module.exports = Sobre;
