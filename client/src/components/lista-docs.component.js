@@ -274,7 +274,7 @@ export default function ListaDocs(props) {
                                             alt=""
                                             src={saibaMais}
                                             hoverSrc={saibaMaisHv}
-                                            css={buttonStyle}
+                                            css={`display:none`}
                                         />
                                     </Link>
                                 </div>
