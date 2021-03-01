@@ -15,7 +15,7 @@ const SeasonType = sequelize.define('season_type', {
     title_en: Sequelize.STRING(1024)
 }, {
     tableName: "vbo_season_type",
-    timestamps: false
+    timestamps: true
 });
 
 module.exports = SeasonType;
