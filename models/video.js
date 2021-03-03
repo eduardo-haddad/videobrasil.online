@@ -16,6 +16,8 @@ const Video = sequelize.define('video', {
         type: Sequelize.INTEGER,
         allowNull: false
     },
+    vimeo_id_pt: Sequelize.STRING,
+    vimeo_id_en: Sequelize.STRING,
     title_pt: Sequelize.STRING(1024),
     title_en: Sequelize.STRING(1024),
     subtitle_pt: Sequelize.STRING(1024),
