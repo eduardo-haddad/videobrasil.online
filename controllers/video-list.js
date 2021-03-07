@@ -80,6 +80,7 @@ exports.getVideoList = async (req, res, next) => {
         bg_color: edition.bg_color,
         bg_img_desktop: edition.bg_img_desktop,
         bg_img_mobile: edition.bg_img_mobile,
+        videos_to_show: edition.videos_to_show,
         programs: programList,
         videos: videoList,
         // Remover

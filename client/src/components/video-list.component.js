@@ -72,6 +72,7 @@ function arraysEqual(a, b) {
 export default function VideoList(props) {
     const lang = props.lang ? props.lang : 'pt';
     const season = props.lista.data.season[lang].type;
+    const videosToShow = props.lista.data.videos_to_show;
     const curatorSeason = ['curador', 'curator'].includes(season);
     const isMobile = useMediaQuery({ query: '(max-width: 767.99px)' });
 
@@ -386,7 +387,7 @@ export default function VideoList(props) {
             main_video.push(
                 <MainPreview
                     bg={main[lang].poster}
-                    customClass={"ayoung"}
+                    customClass={"main_video_custom"}
                     key={0}
                     onClick={(e) => playerHandler(main.id, true, [main], true)}
                 >
@@ -464,7 +465,7 @@ export default function VideoList(props) {
             main_video.push(
                 <MainPreview
                     bg={main[lang].poster}
-                    customClass={"ayoung"}
+                    customClass={"main_video_custom"}
                     key={0}
                     onClick={(e) => playerHandler(main.id)}
                 >
@@ -506,7 +507,7 @@ export default function VideoList(props) {
             const slidesLength = groupPrograms
                 ? props.lista.data.programs.length - 1
                 : videoList.length;
-            const slidesToShow = slidesLength >= 3 ? 3 : slidesLength;
+            const slidesToShow = slidesLength >= 3 ? 3 : videosToShow;
 
             let slickOptions = {
                 dots: false,
