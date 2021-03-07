@@ -36,6 +36,8 @@ exports.getVideoList = async (req, res, next) => {
     videos.map(video => {
         videoList.push({
             id: video.vimeo_id,
+            vimeo_id_pt: video.vimeo_id_pt,
+            vimeo_id_en: video.vimeo_id_en,
             order: video.order,
             program: video.video_program_id,
             pt: {

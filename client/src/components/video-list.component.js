@@ -158,7 +158,7 @@ export default function VideoList(props) {
     // #5 if lang changes, switch video id with language specific id (if present)
     useEffect(() => {
         videoList.map(video => {
-            let vLang = video[lang][`vimeo_id_${lang}`];
+            let vLang = video[`vimeo_id_${lang}`];
             if(vLang !== '' && typeof vLang !== "undefined"){
                 video.id = vLang;
             }
