@@ -16,7 +16,7 @@ const PartnerRoles = sequelize.define('partner_roles', {
     },
 }, {
     tableName: "vbo_partner_roles",
-    timestamps: false
+    timestamps: true
 });
 
 module.exports = PartnerRoles;
