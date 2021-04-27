@@ -20,7 +20,8 @@ const LinkSaibaMais = sequelize.define('links_saibamais', {
         type: Sequelize.TINYINT(1),
         defaultValue: 0
     },
-    text_replacement: Sequelize.TEXT
+    text_replacement_pt: Sequelize.TEXT,
+    text_replacement_en: Sequelize.TEXT
 }, {
     tableName: "vbo_links_saibamais",
     timestamps: true

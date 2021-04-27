@@ -29,14 +29,14 @@ exports.getSaibaMais = async (req, res, next) => {
             url: link.url_pt,
             blank: link.blank,
             download: link.download,
-            textReplacement: link.text_replacement
+            textReplacement: link.text_replacement_pt
         });
         linkListEn.push({
             title: link.title_en,
             url: link.url_en,
             blank: link.blank,
             download: link.download,
-            textReplacement: link.text_replacement
+            textReplacement: link.text_replacement_en
         });
     });
 
